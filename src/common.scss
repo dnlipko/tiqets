@@ -1,0 +1,13 @@
+$screen-desktop-width: 720px;
+
+@mixin disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+@mixin text-crop {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+@import "../../common.scss";
+
+.datePicker {
+    margin-top: 16px;
+
+    &.isDisabled {
+        @include disabled;
+    }
+}
+
+.dates {
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    user-select: none;
+    height: 72px;
+    padding-bottom: 12px;
+    margin: 0;
+    margin-top: 8px;
+}

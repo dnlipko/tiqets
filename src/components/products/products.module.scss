@@ -1,0 +1,24 @@
+@import "../../common.scss";
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 12px;
+    padding: 24px 16px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 0 16px;
+}
+
+@media (max-width: $screen-desktop-width) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+  }

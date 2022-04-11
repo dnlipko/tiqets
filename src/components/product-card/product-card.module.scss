@@ -1,0 +1,79 @@
+@import "../../common.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-light-shadow);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-black-text);
+}
+
+.info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include text-crop;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @include text-crop;
+}
+
+.price {
+  margin-top: 16px;
+}
+
+@media (max-width: $screen-desktop-width) {
+  .card {
+    flex-direction: row;
+    height: 136px;
+  }
+
+  .image {
+    aspect-ratio: 3 / 4;
+    width: auto;
+  }
+
+  .info {
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .price {
+    margin-top: 12px;
+  }
+}

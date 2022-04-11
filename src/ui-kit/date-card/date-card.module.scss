@@ -1,0 +1,43 @@
+.dateCard {
+  border: 1px solid var(--color-black-stroke);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  width: 94px;
+  box-sizing: border-box;
+  min-width: 64px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px 0px;
+    color: var(--color-black-text);
+    text-decoration: none;
+    transition: 0.2s;
+    flex: 1;
+    cursor: pointer;
+  }
+
+  input:checked + label {
+    background-color: var(--color-purple-accent);
+    color: var(--color-white-text);
+  }
+
+  .weekday {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+
+  .date {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../common.scss";
+
+.filters {
+    padding: 24px 16px 12px;
+}
+
+.locationFilters {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: $screen-desktop-width) {
+    .locationFilters {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

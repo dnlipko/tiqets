@@ -1,0 +1,17 @@
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+}
+
+.discountPrice {
+  color: var(--color-red-text);
+}
+
+.oldPrice {
+  font-size: 14px;
+  color: var(--color-grey-text);
+  text-decoration: line-through;
+  margin-left: 8px;
+}

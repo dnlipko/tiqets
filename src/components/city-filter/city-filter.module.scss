@@ -1,0 +1,13 @@
+@import "../../common.scss";
+
+.citySelector {
+  flex: 1;
+
+  &.isDisabled {
+    @include disabled;
+  }
+
+  .dropdown {
+    margin-top: 8px;
+  }
+}

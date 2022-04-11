@@ -1,5 +1,7 @@
 import React from 'react';
 
-const App: React.FC = () => <h1>Plan your trip!</h1>;
+import {MainPage} from "./pages/main";
+
+const App: React.FC = () => <MainPage/>;
 
 export default App;
